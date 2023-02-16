@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc first.c -o cisfun
+gcc CFILE.c -o cisfun
