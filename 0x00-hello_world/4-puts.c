@@ -1,4 +1,6 @@
 #include <stdio.h>
+/*puts function to display */
+
 
 int main(void)
 
