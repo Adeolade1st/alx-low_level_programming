@@ -1,13 +1,6 @@
 #include <stdio.h>
 
 int main(void)
-i
-/**
- * main entry point
- * return always 0
- */
-
-int main(void)
 
 {
 
