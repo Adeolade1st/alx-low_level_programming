@@ -8,12 +8,12 @@
  * return: 0 (success)
  */
 int main(void)
-{ 
+{
 	char a;
 	int b;
 	long int c;
 	long long d;
-	float e;	
+	float e;
 
 	printf("size of a char: %1d byte(s)\n", sizeof(a));
 	printf("size of a int: %4d byte(s)\n", sizeof(b));
