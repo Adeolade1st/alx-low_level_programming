@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 /**
  * main - Program to print diff sizes
  *
@@ -10,15 +11,15 @@ int main(void)
 { 
 	char a;
 	int b;
-	long c;
+	long int c;
 	long long d;
 	float e;	
 
-	printf("size of char: %1d bytes\n", sizeof(a));
-	printf("size of int: %1d bytes\n", sizeof(b));
-	printf("size of long: %1d bytes\n", sizeof(c));
-	peintf("size of long long: %1d bytes\n", sizeof(d));
-	printf("size of float: %1d bytes\n", sizeof(e));
+	printf("size of a char: %1d byte(s)\n", sizeof(a));
+	printf("size of a int: %4d byte(s)\n", sizeof(b));
+	printf("size of a long int: %4d byte(s)\n", sizeof(c));
+	peintf("size of a long long: %8d byte(s)\n", sizeof(d));
+	printf("size of a float: %4d byte(s)\n", sizeof(e));
 	return (0);
 }
 
