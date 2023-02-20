@@ -1,29 +1,29 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* main - This program will assign a random number to the variable n */
+/**
+ * main - print the last digit of a random generated number
+ * and wether it is greate than 5, less than 6 or 0
+ * Return: always 0
+ */
 
-/*description: assign random numbers */
-
-/* return: 0 (success) */
 int main(void)
 {
 	int n;
 
-	srand(time(0);
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	 printf("Please Enter digit:");
-	 scanf(" % d ", &n);
-	 if (n > 5)
-	 {
-	 printf("is greater than 5\n");
-	 }
-	 else if (n = = 0)
-	 printf("is 0\n");
-	 {
-	 else if (n < 6 && n != = 0)
-	 printf("is less than 6 and not 0\n);
-	 }
+	if ((n % 10) > 5)
+	{
+		printf("Last digit of % d and is greater than 5\n", n, n % 10);
+	}
+	else if ((n % 10) < 6 && (n % 10) != 0)
+	{
+		printf("Last digit of % d and is % d and is 0\n", n, n % 10);
+	}
+
+
 
 	return (0);
 }
