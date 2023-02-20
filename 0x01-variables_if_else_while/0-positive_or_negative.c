@@ -2,6 +2,7 @@
 #include <time.h>
 /**
  * main - Program to assign random numbers to variables
+ * Description: Program to assign random numbers to variable n
  * return: Always 0 (success)
  */
 int main(void)
