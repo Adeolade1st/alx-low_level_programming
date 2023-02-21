@@ -1,19 +1,14 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
- * main- Program to print _putchar
  *
+ * main - program to print _putchar
  *
- * Return: On success 1.
+ * return: 0 success
  *
  */
 
 int main(void)
 {
-	char (20);
-
-	putchar("_putchar,\n");
-
-	retunn(0);
-
+	putchar("_put\n");
 }
