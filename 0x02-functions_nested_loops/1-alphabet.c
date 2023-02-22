@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - program to print a-z in lower case
+ * main - print_alphabet entry point
  *
  * Return: Always 0.
  *
