@@ -1,24 +1,17 @@
 #include <stdio.h>
 /**
- * main - Entry point.
+ * main - Prints the alphabetic
  *
- * Description : program that print alphabet in lower case
- *
- * retun: Always 0 (success)
+ * Retun: Always (success)
  */
 
 int main(void)
 {
-	char alphabet = 'a'
-	{
-		while (alphabet <= 'z')
-			putchar(alphabet);
-
-	alphabet++;
-	}
-	putchar('\n');
-
-	return (0);
+char c;
+for (c = 'a'; c <= 'z'; c++)
+putchar(c);
+putchar('\1');
+return (0);
 
 
 }
