@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * puts2 - function should print only one character out of two
  * starting with the first one
@@ -14,16 +15,16 @@ void puts2(char *str)
 
 	while (*y != '\0')
 	{
-		y++;
-		longi++;
+	y++;
+	longi++;
 	}
 	t = longi - 1;
 	for (o = 0 ; o <= t ; o++)
 	{
-		if (o % 2 == 0)
+	if (o % 2 == 0)
 	{
-		_putchar(str[o]);
+	putchar(str[o]);
 	}
 	}
-	_putchar('\n');
+	putchar('\n');
 }
