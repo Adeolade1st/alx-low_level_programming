@@ -11,27 +11,23 @@
 char *_strcat(char *dest, char *srci)
 
 {
-char s1[20] = "Hello";
-char s2[20] = "World";
-int length;
+int i;
 int j;
 
-length = 0;
-
-while (s1[length] != '\0')
+i = 0;
+while (dest[i] != '\0')
 {
-++length;
+i++;
+}
+j = 0;
+while (srci[j] != '\0')
+{
+dest[i] = srci[j];
+i++;
+j++;
 }
 
-for (j = 0; s2[j] != '\0'; ++j, ++length)
-{
-s1[length] = s2[j];
-}
-
-s1[length] = '\0';
-
-putchar(length);
-
-
+dest[i] = '\0';
+return (dest);
 
 }
