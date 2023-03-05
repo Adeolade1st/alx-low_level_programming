@@ -2,7 +2,8 @@
 
 /**
 * strlen - function that returns the length of a string
-* @s: string
+* @char: string to be used
+* @s: pointer
 * return: length
 */
 
