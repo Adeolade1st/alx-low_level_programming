@@ -1,40 +1,36 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strncat - To concatenate two strings
+ * _strncat - Function to concatenate two strings
  * @dest: First string
  * @src: second string
- * @n: value to input
+ * @n: value of input
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
 
 
-int i;
-int j;
+dest = "Hello";
+src = "World!";
 
-i = 0;
-while (dest[i] != '\0')
+int length, j;
 
-i++;
-
-}
-
-j = 0;
-
-while (j < n && src[j] != '\0')
-
+length = 0;
+while (dest[length] != '\0')
 {
-
-dest[i] = src[j];
-
-i++;
-j++;
+++length;
 }
 
-dest[i] = '\0';
 
-return (dest);
+for (j = 0; src[j] != '\0'; ++j, ++length)
+{
+dest[length] = src[j];
+}
+dest[length] = '\0';
+
+putchar(length);
+
+return (0);
 
 }
