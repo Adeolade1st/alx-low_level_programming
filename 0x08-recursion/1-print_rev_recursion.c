@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _rev_recursion - function that prints a string in reverse
+ * _print_rev_recursion - function that prints a string in reverse
  * @s: string to be reversed
  * return: string
  */
