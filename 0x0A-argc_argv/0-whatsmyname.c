@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * @argc: counts the program
- * @argv: to store
- * Programe to print name
+ * main - Programe to print mynameis
+ * @argc: argument counter
+ * @argv: array of string
  * return: name
  */
 
