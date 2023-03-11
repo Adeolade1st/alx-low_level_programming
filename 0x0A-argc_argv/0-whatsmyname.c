@@ -4,7 +4,7 @@
  * main - Programe to print mynameis
  * @argc: argument counter
  * @argv: array of string
- * return: name
+ * return: 0
  */
 
 int main(int argc, char *argv[])
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 (void)argc;
 (void)argv;
 
-printf("./mynameis %c\n", argc);
+printf("./mynameis %s\n", argv[0]);
 
 return (0);
 }

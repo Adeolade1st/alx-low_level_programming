@@ -4,7 +4,7 @@
  * main - program that prints the number of arguments passed into it
  * @argc: program counter
  * @argv: array that stores the string
- * return: argument
+ * return: 0
  */
 
 int main(int argc, char *argv[])
@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
 
 
 printf("%d\n", argc);
+
 
 return (0);
 
