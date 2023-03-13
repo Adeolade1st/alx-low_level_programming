@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - program that prints all arguments it receives.
- * argc: argument counter
- * argv: array that stores string
+ * main - Program that prints all arguments
+ * @argc: argument counter
+ * @argv: array that stores string
  * return: 0
  */
 
