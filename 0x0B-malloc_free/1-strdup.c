@@ -3,27 +3,44 @@
 #include <stdlib.h>
 
 /**
- * _strdup - returns a pointer to string
- * @str: string
- * @chr:
- * return: always 0
+ * _strdup - duplicate the string
+ * @str: string to be duplicated
+ * @chr: the pointer
+ * return: the string duplicated
  */
 
 char *_strdup(char *str)
 
 {
-(void)str;
 
 
-char *str = "ALX SE";
-char *res;
+int a = 0, i = 1;
+char *s;
 
-res = strdup(str);
+if (str == NULL)
+return (NULL);
+
+while (str[i])
+{
+i++;
+}
+
+s = malloc((sizeof(char) * i) +1);
+
+if (s == NULL)
+return (NULL);
+
+while (a < i)
+{
+s[a] = str[a];
+a++;
+
+}
+
+s[a] = '\0';
 
 
-putchar("res");
-
-return (0);
+return (s);
 
 
 }
