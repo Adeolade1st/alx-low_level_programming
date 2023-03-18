@@ -1,59 +1,55 @@
-#include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+#include"main.h"
+#include<stdlib.h>
+#include<stdio.h>
+#include<string.h>
 
 /**
- * str_concat - concatenates two strings of any size
- * @s1: the first string to concatenate
- * @s2: the second string to concatenate
- * Return: the two strings concatenated
- */
+* str_concat - concatenates two strings of any size
+* @s1: the first string to concatenate
+* @s2: the second string to concatenate
+* Return: pointer to the newly allocated memory
+*/
 
-int _strlen(char *s)
-
+char*str_concat(char *s1, char *s2)
 {
-unsigned int i;
 
-i = 0;
-while (s[i] != '0')
-{
-i++;
-}
-return (i);
+unsigned int len1, len2, size, i, j;
+char*nstr;
 
-}
-
-/**
- * str_concat - back a pointer to array
- * @s1: Array one
- * @s2: array two
- * return: always an array
- */
-
-char *str_concat(char *s1, char *s2)
-{
-char *dst;
-unsigned int i, j, size;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-size = (_strlen(s1) + strlen(s2) + 1);
 
-dst = (char *) malloc(size * sizeof(char));
-if (dst == 0)
-{
+len1 = 0;
+while (s1[len1] != '\0')
+len1++;
+
+len2 = 0;
+while (s2[len2] != '\0')
+len2++;
+
+size = len1 + len2;
+
+nstr = malloc((sizeof(char) * size) +1);
+if (nstr == NULL)
 return (NULL);
+
+i = 0;
+while (i < len1)
+{
+nstr[i] = s1[i];
+i++;
 }
 
-for (i = 0; *(s1 + 1) != '\0'; i++)
-*(dst + 1) = *(s1 + 1);
-
-for (j = 0; *(s2 + j) != '\0'; j++)
-*(dst + i) = *(s2 + j);
+j = 0;
+while (j <= size)
+nstr[j] = s2[j];
 i++;
+j++;
 
-return (dst);
+
+return (nstr);
+
 
 }
