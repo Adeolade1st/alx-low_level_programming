@@ -1,17 +1,15 @@
 #include <stdio.h>
 /**
- * _program_that_prints - to print program it was compiled from
- * @argc: argument counter
- * @argv: stores the argument
- * return: the program name
+ * function - program to print program  where it was compiled from
+ * return: 0 success
  */
 
-int main()
+int main(void)
 
 {
 printf("%s\n", __FILE__);
 
-return(0);
+return (0);
 
 }
 
