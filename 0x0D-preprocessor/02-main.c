@@ -6,10 +6,10 @@
  * return: the program name
  */
 
-int main(int argc, char *argv[])
+int main()
 
 {
-printf("argv[0]\n");
+printf("%s\n", __FILE__);
 
 return(0);
 
