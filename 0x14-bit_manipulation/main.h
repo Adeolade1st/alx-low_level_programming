@@ -1,7 +1,10 @@
+#ifndef HEADER_FILE
+#define HEADER_FILE
 
-#define MAIN_H
-#ifndef MAIN_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 
 unsigned int binary_to_uint(const char *b);
@@ -12,4 +15,4 @@ int set_bit(unsigned long int *n, unsigned int index);
 
 
 
-#endif  /**MAIN_H*/
+#endif
