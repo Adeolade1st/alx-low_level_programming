@@ -1,32 +1,20 @@
-#include<stdio.h>
 #include"main.h"
 
 /**
  * print_binary - function to print binary representation of a num
+ * @n: number
  * return: binary number
  */
 
-
 void print_binary(unsigned long int n)
 {
+int binary;
 
-int num_bits = sizeof(unsigned long int) * 8;
-
-for (int i = num_bits - 1; i >= 0; i--)
-{
-
-unsigned long int mask = 1UL << i;
-putchar((n & mask) ? '1' : '0');
-
-}
+if (n >> 1)
+print_binary(n >> 1);
+/* get the last bit of the number */
+binary = n & 1;
+putchar(binary + '0');
 }
 
-int main(void)
-{
-unsigned long int n = 42;
-print_binary(n);
-putchar('\n');
-return (0);
-
-}
 
